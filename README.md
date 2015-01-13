@@ -6,7 +6,7 @@ A plugin to access the preference tags (settings) in config.xml via Javascript
 
     AppSettings.get(
     	function(value) {
-    		alert("Value: " + JSON.stringify(error));
+    		alert("Value: " + JSON.stringify(value));
     	},
     	function(error) {
         	alert("Error! " + JSON.stringify(error));
