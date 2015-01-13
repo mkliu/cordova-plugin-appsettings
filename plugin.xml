@@ -9,6 +9,8 @@
     <description>Cordova Config.XML settings access Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,settings,appsettings,config.xml</keywords>
+    <repo>https://github.com/mkliu/cordova-plugin-appsettings.git</repo>
+    <issue>https://github.com/mkliu/cordova-plugin-appsettings/issues</issue>
 
     <js-module src="www/appsettings.js" name="AppSettings" >
         <clobbers target="AppSettings" />
