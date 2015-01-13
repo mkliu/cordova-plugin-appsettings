@@ -3,14 +3,16 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.apache.cordova.appsettings"
+    id="com.wizky.cordova.appsettings"
     version="0.1">
     <name>Settings Plugin</name>
     <description>Cordova Config.XML settings access Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,settings,appsettings</keywords>
+    <keywords>cordova,settings,appsettings,config.xml</keywords>
 
-    <js-module src="www/appsettings.js" name="appsettings" />
+    <js-module src="www/appsettings.js" name="AppSettings" >
+        <clobbers target="AppSettings" />
+    </js-module>
 
   <!-- android -->
   <platform name="android">
@@ -18,9 +20,6 @@
       <feature name="AppSettings" >
         <param name="android-package" value="org.apache.cordova.appsettings.AppSettings"/>
       </feature>
-      <preference name="CouchdbUrl" value="http://172.23.188.139:5900" />
-      <preference name="CouchdbPrivateUrl" value="http://172.23.188.139:5900" />
-      <preference name="TestSha" value="shashashasha" />
     </config-file>
     
     <source-file src="src/android/AppSettings.java" target-dir="src/org/apache/cordova/appsettings" />
@@ -32,9 +31,6 @@
       <feature name="AppSettings">
         <param name="ios-package" value="AppSettings"/>
       </feature>
-      <preference name="CouchdbUrl" value="http://172.23.188.139:5900" />
-      <preference name="CouchdbPrivateUrl" value="http://172.23.188.139/:5900" />
-      <preference name="TestSha" value="shashashasha" />
     </config-file>
     
     <header-file src="src/ios/AppSettings.h" />
