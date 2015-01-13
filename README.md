@@ -2,7 +2,7 @@
 A plugin to access the preference tags (settings) in config.xml via Javascript
 
 ## Usage
-    cordova plugin add https://github.com/mkliu/cordova-plugin-appsettings.git
+    cordova plugin add com.wizky.cordova.appsettings
 
     AppSettings.get(
     	function(value) {

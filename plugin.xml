@@ -4,10 +4,11 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.wizky.cordova.appsettings"
-    version="0.1">
+    version="1.0.0">
     <name>Settings Plugin</name>
+    <author>Wizky LLC</author>
     <description>Cordova Config.XML settings access Plugin</description>
-    <license>Apache 2.0</license>
+    <license>MIT</license>
     <keywords>cordova,settings,appsettings,config.xml</keywords>
     <repo>https://github.com/mkliu/cordova-plugin-appsettings.git</repo>
     <issue>https://github.com/mkliu/cordova-plugin-appsettings/issues</issue>
