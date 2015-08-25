@@ -4,6 +4,7 @@ import java.util.Locale;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaPreferences;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -17,9 +18,10 @@ public class AppSettings extends CordovaPlugin {
     	JSONObject options = new JSONObject();
         if (action.equals("get")) {
         	try{
+                CordovaPreferences preferences = webView.getPreferences();
                 for(int i=0;i<args.length();i++){
         	        String key=args.getString(i);
-                    String keyvalue = cordova.getActivity().getIntent().getStringExtra(key.toLowerCase(Locale.getDefault()));        		
+                    String keyvalue = preferences.getString(key, null);
                     if (keyvalue != null) {
                         options.put(key, keyvalue);
                     }
