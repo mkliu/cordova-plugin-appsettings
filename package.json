@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-appsettings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova Config.XML settings access Plugin",
   "cordova": {
     "id": "com.wizky.cordova.appsettings",
