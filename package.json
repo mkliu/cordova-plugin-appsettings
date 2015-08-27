@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-appsettings",
+  "version": "1.0.0",
+  "description": "Cordova Config.XML settings access Plugin",
+  "cordova": {
+    "id": "com.wizky.cordova.appsettings",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkliu/cordova-plugin-appsettings.git"
+  },
+  "keywords": [
+    "cordova",
+    "settings",
+    "appsettings",
+    "config.xml",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "mkliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkliu/cordova-plugin-appsettings/issues"
+  },
+  "homepage": "https://github.com/mkliu/cordova-plugin-appsettings#readme"
+}
