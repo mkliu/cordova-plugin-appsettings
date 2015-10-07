@@ -3,8 +3,8 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.wizky.cordova.appsettings"
-    version="1.0.0">
+    id="cordova-plugin-appsettings"
+    version="1.0.2">
     <name>Settings Plugin</name>
     <author>Wizky LLC</author>
     <description>Cordova Config.XML settings access Plugin</description>
@@ -24,7 +24,7 @@
         <param name="android-package" value="org.apache.cordova.appsettings.AppSettings"/>
       </feature>
     </config-file>
-    
+
     <source-file src="src/android/AppSettings.java" target-dir="src/org/apache/cordova/appsettings" />
   </platform>
 
@@ -35,9 +35,9 @@
         <param name="ios-package" value="AppSettings"/>
       </feature>
     </config-file>
-    
+
     <header-file src="src/ios/AppSettings.h" />
     <source-file src="src/ios/AppSettings.m" />
   </platform>
-  
+
 </plugin>
