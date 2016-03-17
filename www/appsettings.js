@@ -1,8 +1,8 @@
 
 var argscheck = require('cordova/argscheck'),
-    exec = require('cordova/exec');
+  exec = require('cordova/exec');
 
-function AppSettings() {
+function AppSettings () {
 
 }
 /**
@@ -15,13 +15,11 @@ function AppSettings() {
 AppSettings.prototype.get = function (keyArray, successCallback, errorCallback) {
     try {
         argscheck.checkArgs('AFF', 'AppSettings.get', arguments);
-    }
-    catch () {
-       argscheck.checkArgs('AF', 'AppSettings.get', arguments); 
+    } catch (exception) {
+        argscheck.checkArgs('AF', 'AppSettings.get', arguments);
     }
 
-    exec (successCallback, errorCallback, "AppSettings", "get", keyArray);
+    exec(successCallback, errorCallback, "AppSettings", "get", keyArray);
 };
 
 module.exports = new AppSettings();
-
