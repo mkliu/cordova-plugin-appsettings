@@ -8,12 +8,13 @@ https://www.npmjs.com/package/cordova-plugin-appsettings
     cordova plugin add cordova-plugin-appsettings
 
     AppSettings.get(
+        ["Preference1", "Preference2"],
     	function(value) {
     		alert("Value: " + JSON.stringify(value));
     	},
     	function(error) {
         	alert("Error! " + JSON.stringify(error));
-    }, ["Preference1", "Preference2"]);
+    });
 
 ## Credits
 https://github.com/apache/cordova-labs/tree/cdvtest
