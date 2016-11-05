@@ -1,6 +1,7 @@
 package org.apache.cordova.appsettings;
 
 import java.util.Locale;
+import java.lang.String;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -23,7 +24,7 @@ public class AppSettings extends CordovaPlugin {
         	        String key=args.getString(i);
                     String keyvalue = preferences.getString(key, null);
                     if (keyvalue != null) {
-                        options.put(key, keyvalue);
+                        options.put(key.toLowerCase(), keyvalue);
                     }
                 }
                 callbackContext.success(options);
