@@ -19,17 +19,17 @@
     }
 
     @try {
-        NSMutableDictionary *settings = [[NSMutableDictionary alloc] initWithCapacity:20];
+        NSMutableDictionary* settings = [[NSMutableDictionary alloc] initWithCapacity:20];
       
       
-        NSDictionary *sets = self.commandDelegate.settings;
+        NSDictionary* sets = self.commandDelegate.settings;
         for (NSString* settingName in options) {
-          if(sets[ [settingName lowercaseString]] != nil) {
-             settings[[settingName lowercaseString ]] = sets[ [settingName lowercaseString]];
+          if(sets[[settingName lowercaseString]] != nil) {
+             settings[[settingName lowercaseString]] = sets[[settingName lowercaseString]];
           }
         }
-        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary: [settings copy]];
-    } @catch (NSException * e) {
+        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:[settings copy]];
+    } @catch (NSException* e) {
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_NO_RESULT messageAsString:[e reason]];
     } @finally {
         [self.commandDelegate sendPluginResult:result callbackId:[command callbackId]];
